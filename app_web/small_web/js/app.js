@@ -1,9 +1,8 @@
+const burger = document.querySelector('.burger');
+const modal = document.querySelector('.modal');
 
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.getElementById("changeTextButton");
-    const textElement = document.getElementById("textContent");
-
-    button.addEventListener("click", function () {
-        textElement.textContent = "Текст изменен с помощью JS";
-    });
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  modal.classList.toggle('active');
+  document.querySelector('.nav-menu').classList.toggle('active');
 });
